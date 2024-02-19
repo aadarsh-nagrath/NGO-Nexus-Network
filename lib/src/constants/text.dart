@@ -44,7 +44,7 @@ const String dontHaveAnAccount = "Don't have an Account? ";
 
 
 // -- Sign Up Screen Text
-const String signUpTitle = "Get On Board!";
+const String signUpTitle = "Create Account";
 const String signUpSubTitle = "Create your profile to start your Journey.";
 const String alreadyHaveAnAccount = "Already have an Account? ";
 

@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:vyasa/src/constants/sizes.dart';
 import 'package:vyasa/src/constants/text.dart';
+import 'package:vyasa/src/features/authentication/screens/login/login_screen.dart';
+import 'package:vyasa/src/features/authentication/screens/signup/option_signup.dart';
+// import 'package:vyasa/src/features/authentication/screens/signup/signup_screen.dart';
 import '../../../../constants/colors.dart';
 import '../../../../constants/image_string.dart';
-
 class WelcomeScreen extends StatelessWidget {
   const WelcomeScreen({super.key});
 
@@ -38,14 +41,14 @@ class WelcomeScreen extends StatelessWidget {
               children: [
                 Expanded(
                   child: OutlinedButton(
-                    onPressed: () {},
+                    onPressed: ()=> Get.to(()=>const LoginScreen()),
                     child: Text(login.toUpperCase()),
                   ),
                 ),
                 const SizedBox(width: 10.0),
                 Expanded(
                   child: ElevatedButton(
-                    onPressed: () {},
+                    onPressed: ()=> Get.to(()=>const OptionSignup()),
                     child: Text(signup.toUpperCase()),
                   ),
                 ),
