@@ -10,3 +10,4 @@ const String onBoardingImage2 = "assets/images/on_boarding_screen/on_boarding_im
 const String onBoardingImage3 = "assets/images/on_boarding_screen/on_boarding_image3.png";
 
 
+const String welcomeScreenImage = "assets/images/welcome_images/welcome.png";

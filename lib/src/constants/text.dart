@@ -20,20 +20,20 @@ const String appTagLine = "Learn To Code. \nFree For Everyone";
 
 // -- On Boarding Text
 // On Boarding Text
-const String onBoardingTitle1 = "Build Awesome Apps"; 
-const String onBoardingTitle2 = "Learn from YouTube"; 
+const String onBoardingTitle1 = "Let's Make a Social"; 
+const String onBoardingTitle2 = "Let's Make a Social"; 
 const String onBoardingTitle3 = "Get Code & Resources";
 const String onBoardingSubTitle1 = "Let's start your journey with us on this a ";
-const String onBoardingSubTitle2 = "Get Video Tutorials of each topic to learn";
-const String onBoardingSubTitle3 = "Save time by just aopy pasting complete ap";
+const String onBoardingSubTitle2 = "Get lol lamao..............";
+const String onBoardingSubTitle3 = "Save time by just aopy pasting complete app";
 const String onBoardingCounter1 = "1/3";
 const String onBoardingCounter2 = "2/3";
 const String onBoardingCounter3 = "3/3";
 
 
 // -- Welcome Screen Text
-const String welcomeTitle = "Build Awesome Apps";
-const String welcomeSubTitle = "Let's put your creativity on the development highway.";
+const String welcomeTitle = "Let's Make a Social Change";
+const String welcomeSubTitle = "Change lives, change the world. Give yourself a chance to make a difference.";
 
 
 // -- Login Screen Text

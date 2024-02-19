@@ -3,7 +3,7 @@ import 'package:google_fonts/google_fonts.dart';
 
 class TTextTheme {
   static TextTheme lightTextTheme = TextTheme(
-    displayMedium: GoogleFonts.montserrat(color: Colors.black87),
+    displayMedium: GoogleFonts.montserrat(color: Colors.white),
     titleSmall: GoogleFonts.poppins(color: Colors.deepPurple, fontSize: 24),
   );
   static TextTheme darkTextTheme = TextTheme(
