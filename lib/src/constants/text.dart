@@ -60,3 +60,7 @@ const String forgetPhoneSubTitle = "Enter your registered Phone No to receive OT
 
 // -- Forget Password Via E-Mail - Text
 const String forgetMailSubTitle = "Enter your registered E-Mail to receive OTP";
+
+const String otpTitle = "OTP";
+const String otpSubtitle = "Verification";
+const String otpMessage = "Enter the verification code at ";

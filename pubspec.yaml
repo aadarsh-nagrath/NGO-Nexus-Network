@@ -17,6 +17,7 @@ dependencies:
   liquid_swipe: ^3.1.0
   smooth_page_indicator: ^1.1.0
   get: ^4.6.6
+  flutter_otp_text_field: ^1.1.1
 
 dev_dependencies:
   flutter_test:
@@ -46,7 +47,7 @@ flutter:
    - assets/images/
    - assets/images/welcome_images/
    - assets/images/splash_images/
-   - assets/logo/
+   - assets/images/forgot_password/
 
   # fonts:
   #   - family: Schyler
