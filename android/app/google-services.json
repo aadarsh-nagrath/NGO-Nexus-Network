@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "287084067865",
+    "project_id": "ngo-network-991ad",
+    "storage_bucket": "ngo-network-991ad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:287084067865:android:c69e88649b15a9f302fe88",
+        "android_client_info": {
+          "package_name": "com.example.vyasa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "287084067865-6j57t5lng62fj1857sfff61doabaip4t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYDdfKeSrm6KfhN4-QqS6XGqEPb2659ts"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "287084067865-6j57t5lng62fj1857sfff61doabaip4t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

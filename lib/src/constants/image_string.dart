@@ -15,3 +15,5 @@ const String googleLogoImage = "assets/images/google.png";
 const String mainLogoImage = "assets/images/logo.png";
 
 const String forgotPass = "assets/images/forgot_password/forgot_pass.png";
+
+const profileImg = "assets/images/profile_pic.jpg";

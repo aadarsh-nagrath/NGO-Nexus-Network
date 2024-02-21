@@ -1,11 +1,19 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:get/get_navigation/src/root/get_material_app.dart';
-import 'package:get/get_navigation/src/routes/transitions_type.dart';
+import 'package:get/get.dart';
+import 'package:vyasa/firebase_options.dart';
 import 'package:vyasa/src/features/authentication/screens/splash_screen/splash_screen.dart';
+// import 'package:vyasa/src/features/core/screens/dashboard/dashboard.dart';
 import 'package:vyasa/src/util/theme/theme.dart';
 
+import 'src/repository/authentication_repository/auth_repo.dart';
 
-void main() => runApp(const App());
+
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform).then((value) => Get.put(AuthenticationRepository()));
+  runApp(const App());
+}
 
 
 class App extends StatelessWidget {
@@ -26,3 +34,5 @@ class App extends StatelessWidget {
   }
 }
 
+// const MainScreen()
+//

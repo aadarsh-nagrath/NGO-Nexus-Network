@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:vyasa/src/constants/image_string.dart';
 import 'package:vyasa/src/constants/sizes.dart';
 import 'package:vyasa/src/constants/text.dart';
+import 'package:vyasa/src/features/authentication/controllers/signup_controller.dart';
 import 'package:vyasa/src/features/authentication/screens/login/login_screen.dart';
 
 class SignUpScreen extends StatelessWidget {
@@ -41,29 +42,38 @@ class SignUpFormWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    //We will have a controller to send the data from text field to the signup controller
+    final controller = Get.put(SignUpController());
+    final formKey = GlobalKey<FormState>();
+
     return Container(
       padding: const EdgeInsets.symmetric(vertical: formHeight - 10),
       child: Form(
+        key: formKey,
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             TextFormField(
+              controller: controller.fullName,
               decoration: const InputDecoration(
                   labelText: fullName,
                   prefixIcon: Icon(Icons.person_outline_rounded)),
             ),
             const SizedBox(height: formHeight - 20),
             TextFormField(
+              controller: controller.email,
               decoration: const InputDecoration(
                   labelText: email, prefixIcon: Icon(Icons.email_outlined)),
             ),
             const SizedBox(height: formHeight - 20),
             TextFormField(
+              controller: controller.phoneNo,
               decoration: const InputDecoration(
                   labelText: phoneNo, prefixIcon: Icon(Icons.phone)),
             ),
             const SizedBox(height: formHeight - 20),
             TextFormField(
+              controller: controller.password,
               decoration: const InputDecoration(
                   labelText: password, prefixIcon: Icon(Icons.fingerprint)),
             ),
@@ -71,7 +81,11 @@ class SignUpFormWidget extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  if(formKey.currentState!.validate()){
+                    SignUpController.instance.registerUser(controller.email.text.trim(), controller.password.text.trim());
+                  }
+                },
                 child: Text(signup.toUpperCase()),
               ),
             )
