@@ -5,6 +5,7 @@ import 'package:ionicons/ionicons.dart';
 import 'package:vyasa/src/constants/colors.dart';
 import 'package:vyasa/src/features/core/screens/dashboard/donate_screen.dart';
 import 'package:vyasa/src/features/core/screens/dashboard/home_screen.dart';
+import 'package:vyasa/src/features/core/screens/events/event.dart';
 import 'package:vyasa/src/features/core/screens/profile/profile_screen.dart';
 
 class MainScreen extends StatefulWidget {
@@ -18,7 +19,7 @@ class _MainScreenState extends State<MainScreen> {
   int currentTab = 0;
   List screens = const [
     HomeScreen(),
-    Scaffold(),
+    EventPage(),
     DonateNow(),
     Scaffold(),
     ProfileScreen(),

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class DonateNow extends StatelessWidget {
-  const DonateNow({super.key});
+  const DonateNow({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +30,7 @@ class DonateNow extends StatelessWidget {
             onPressed: () {
               // Handle Donate Goods & Services option
             },
-          ),
+          ),// Removed 'const' as it's not used correctly here
         ],
       ),
     );
@@ -54,7 +54,7 @@ class OptionButton extends StatelessWidget {
         onPressed: onPressed,
         child: Text(
           text,
-          style: TextStyle(fontSize: 20),
+          style: const TextStyle(fontSize: 20),
         ),
       ),
     );
